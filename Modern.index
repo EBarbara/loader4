@@ -29,6 +29,11 @@
 </Part>
 
 <Part>
+<Filename>modern-occupations.part</Filename>
+<PartAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/modern-occupations.part</PartAddress>
+</Part>
+
+<Part>
 <Filename>charismatic.part</Filename>
 <PartAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/charismatic.part</PartAddress>
 </Part>

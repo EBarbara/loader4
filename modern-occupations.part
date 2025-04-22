@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
+<D20Rules game-system="D&amp;D4E">
+  
+<UpdateInfo>
+<Version>1.0</Version>
+<Filename>modern-occupations.part</Filename>
+<PartAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/modern-occupations.part</PartAddress>
+<VersionAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/versions/modern-occupations.txt</VersionAddress>
+</UpdateInfo>
+
+<Changelog>
+Updated 22-April-2025 File released.
+*NEW: Use node ID_FMP_CLASS_0 to designate a power allowed to any class such as a theme power or skill power. Make sure to set the power Prereqs when using ID_FMP_CLASS_0.
+</Changelog>
+
+<!-- CELEBRITY -->
+
+<RulesElement name="Celebrity" type="Theme" internal-id="ID_MODERN_THEME_05" source="Modern Player's Guide">
+<specific name="_PARSED_SUB_FEATURES"> ID_MODERN_CLASS_FEATURE_8051, ID_MODERN_CLASS_FEATURE_8052 </specific>
+<rules>
+<grant name="ID_MODERN_CLASS_FEATURE_8051" type="Class Feature"/>
+<grant name="ID_MODERN_CLASS_FEATURE_8052" type="Class Feature"/>
+<modify name="Bluff" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+<modify name="Diplomacy" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+<modify name="Intimidate" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+<statadd name="Bluff Misc" value="+2" requires="Bluff Skill Training;ID_INTERNAL_SKILL_TRAINING_BLUFF"/>
+<statadd name="Diplomacy Misc" value="+2" requires="Diplomacy Skill Training;ID_INTERNAL_SKILL_TRAINING_DIPLOMACY"/>
+<statadd name="Intimidate Misc" value="+2" requires="Intimidate Skill Training;ID_INTERNAL_SKILL_TRAINING_INTIMIDATE"/>
+</rules>
+Since you were young you always craved the spot light, always had to be the center of attention. As you have grown up, your desire to be seen and heard has only increased. Your life of adventure has given you plenty of opportunity to be noticed, and you revel in every minute of it.
+Are you an aspiring Hollywood star, trying to make a name for themselves? Or maybe a comedian or other stage performer? What was your reason for wanting more then your 15 minutes of fame?
+
+Starting Features
+As a celebrity, your reputation means everything. It influences what you do and how you do it. The higher your reputation, the more influence you have.
+You begin with a bonus to reputation equal to your charisma modifier. As your charisma increases, so does the bonus to your reputation. Your reputation score influences every aspect of a celebrity.
+You also gain the daily utility power Call In Favor.
+
+Related Skills: Add Bluff, Diplomacy and Intimidate to your class skill list.
+
+Wealth Progression: Celebrities find themselves in the high class column with a +2 bonus to their wealth level.
+</RulesElement>
+
+<RulesElement name="Celebrity Job Features" type="Class Feature" internal-id="ID_MODERN_CLASS_FEATURE_8051" source="Modern Player's Guide">
+<Prereqs> Celebrity </Prereqs>
+<Category> 1 </Category>
+Level 5 Feature
+You can now acquire weapons, armor, and vehicles using the call in favor utility power. You also gain a +2 bonus to reputation.
+
+Level 10 Feature
+You are able to acquire advanced technology and items with upgrades and gadgets, so long as the items level is no greater than your reputation score. You also gain a +2 bonus to your reputation.
+</RulesElement>
+
+<RulesElement name="Celebrity Career Opportunities" type="Class Feature" internal-id="ID_MODERN_CLASS_FEATURE_8052" source="Modern Player's Guide">
+<Prereqs> Celebrity </Prereqs>
+<Category> 1 </Category>
+<specific name="_DisplayPowers"> ID_MODERN_POWER_80502,ID_MODERN_POWER_80506,ID_MODERN_POWER_80510 </specific>
+<rules>
+<grant name="ID_MODERN_POWER_80502" level="2"/>
+<grant name="ID_MODERN_POWER_80506" level="6"/>
+<grant name="ID_MODERN_POWER_80510" level="10"/>
+</rules>
+Your reputation grants you certain privileges befitting your station. You know people in all the right places, that are willing to drop everything to perform your tasks.
+</RulesElement>
+
+<RulesElement name="Call a Ride" type="Power" internal-id="ID_MODERN_POWER_80502" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_6,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+<Prereqs> Celebrity </Prereqs>
+<Flavor> You know a guy that can get you into and out of rough situations. </Flavor>
+<specific name="Power Usage"> Daily </specific>
+<specific name="Display"> Celebrity Utility 2 </specific>
+<specific name="Keywords"> Charm </specific>
+<specific name="Action Type"> Minor action </specific>
+<specific name="Attack Type"> Close burst 10 </specific>
+<specific name="Effect"> Assuming its able to, a vehicle arrives to transport yourself and up to 6 other individuals from one location to another in the same general area. The vehicle can be any civilian ground, air or nautical vessel the DM deems appropriate.
+The pilot has a operate skill bonus equal to your reputation score.
+</specific>
+<specific name="Special"> This power can be used during a combat encounter, unlike the Call In Favor utility power. </specific>
+<specific name="_Associated Feats"/>
+<specific name="_ThemePower"> ID_MODERN_THEME_05 </specific>
+<specific name="Class"> ID_MODERN_THEME_05 </specific>
+<specific name="Level"> 2 </specific>
+<specific name="Power Type"> Utility </specific>
+Level 2 Utility Power
+You make a quick call, and within seconds a vehicle arrives to pick you up from behind enemy lines. The driver is skilled at what he does and is willing to risk the danger of your company.
+</RulesElement>
+
+<RulesElement name="Call Drop Off" type="Power" internal-id="ID_MODERN_POWER_80506" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_6,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+<Prereqs> Celebrity </Prereqs>
+<Flavor> With a quick call, and a transfer of funds the equipment you purchased arrives promptly. </Flavor>
+<specific name="Power Usage"> Daily </specific>
+<specific name="Display"> Celebrity Utility 6 </specific>
+<specific name="Keywords"> Charm </specific>
+<specific name="Action Type"> Minor action </specific>
+<specific name="Attack Type"> Close burst 10 </specific>
+<specific name="Effect"> Assuming its able to, equipment is dropped off within the burst. The equipment can be anything your are normally capable of purchasing. You are still required to purchase the equipment as normal.</specific>
+<specific name="Special"> This power can be used during a combat encounter, unlike the Call In Favor utility power. </specific>
+<specific name="_Associated Feats"/>
+<specific name="_ThemePower"> ID_MODERN_THEME_05 </specific>
+<specific name="Class"> ID_MODERN_THEME_05 </specific>
+<specific name="Level"> 6 </specific>
+<specific name="Power Type"> Utility </specific>
+Level 6 Utility Power
+Down to your last clip, and short on supplied you know just who to call to get some equipment delivered to your location. It may be dropped in by air or perhaps an unmarked car drops by with a trunk full of goods. Regardless of how it gets to you, you get what you need so long as you can pay for it.
+</RulesElement>
+
+<RulesElement name="Call Help" type="Power" internal-id="ID_MODERN_POWER_80510" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_6,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+<Prereqs> Celebrity </Prereqs>
+<Flavor> Your status has allowed you to acquire friends in high places. Some of these friends have other friends, ones with guns. </Flavor>
+<specific name="Power Usage"> Daily </specific>
+<specific name="Display"> Celebrity Utility 10 </specific>
+<specific name="Keywords"> Charm </specific>
+<specific name="Action Type"> Minor action </specific>
+<specific name="Attack Type"> Close burst 10 </specific>
+<specific name="Effect"> Assuming their able to, 2 minion followers from the leadership chapter arrive to give aid. The followers are equipped with any simple weapon you wish and take orders only from you. The followers level is equal to yours. See the leadership chapter on how to use followers in combat.
+Reputation 15: 4 minion followers
+Reputation 20: 6 minion followers
+Reputation 25: 8 minion followers
+Reputation 30: 10 minion followers
+</specific>
+<specific name="Special"> This power can be used during a combat encounter, unlike the Call In Favor utility power. </specific>
+<specific name="_Associated Feats"/>
+<specific name="_ThemePower"> ID_MODERN_THEME_05 </specific>
+<specific name="Class"> ID_MODERN_THEME_05 </specific>
+<specific name="Level"> 10 </specific>
+<specific name="Power Type"> Utility </specific>
+Level 10 Utility Power
+The odds or against you, and your out numbered two to one. With a quick call, armed allies arrive to render assistance.
+</RulesElement>
+
+</D20Rules>
