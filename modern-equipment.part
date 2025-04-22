@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
+<D20Rules game-system="D&amp;D4E">
+
+<UpdateInfo>
+<Version>1.0</Version>
+<Filename>modern-equipment.part</Filename>
+<PartAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/modern-equipment.part</PartAddress>
+<VersionAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/versions/modern-equipment.txt</VersionAddress>
+</UpdateInfo>
+
+<Changelog>
+Updated 22-April-2025 File released.
+</Changelog>
+    
+<RulesElement name="Beretta 92F" type="Weapon" internal-id="ID_MODERN_WEAPON_1" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ONE-HAND,ID_MODERN_WEAPON_GROUP_1,ID_INTERNAL_CATEGORY_ONE-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
+<specific name="Full Text"> Beretta 92F (9 mm)
+Simple one-handed ranged firearm
+Price: $650
+Availability: Licensed
+Damage: 2d6
+Proficient: +2
+Range: 20/40
+Weight: 3 lb.
+
+Properties:
+Semi-Auto ( A semiautomatic weapon can make multiple hits per attack depending on the power used, but can never attack more creatures than the weapon has ammo currently has loaded.).
+Off-Hand (An off-hand weapon is light enough that you can hold it and attack effectively with it while holding a weapon in your main hand. You can't attack with both weapons in the same turn, unless you have a power that lets you do so, but you can attack with either weapon.).
+
+Group: 
+Handgun (A handgun is a personal firearm that can be used one-handed.). </specific>
+<specific name="Weapon Category"> Simple Ranged </specific>
+<specific name="Proficiency Bonus"> 2 </specific>
+<specific name="Damage"> 2d6 </specific>
+<specific name="Range"> 20/40 </specific>
+<specific name="Weight"> 3 </specific>
+<specific name="Gold" />
+<specific name="_Primary End" />
+<specific name="Hands Required"> One-Handed </specific>
+<specific name="Item Slot"> Off-hand </specific>
+<specific name="Group"> Handgun </specific>
+<specific name="Properties"> Semi-Auto, Offhand </specific>
+</RulesElement>
+
+</D20Rules>

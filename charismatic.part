@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<D20Rules game-system="D&amp;D4E">
+
+<UpdateInfo>
+<Version>1.0</Version>
+<Filename>charismatic.part</Filename>
+<PartAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/charismatic.part</PartAddress>
+<VersionAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/versions/charismatic.txt</VersionAddress>
+</UpdateInfo>
+		
+<Changelog>
+Updated 22-April-2025 File released.
+</Changelog>
+
+<RulesElement name="Charismatic Hero" type="Class" internal-id="ID_FMP_MODERN_CLASS_1" source="Modern Player's Guide">
+<Flavor> “ Come on, take my hand. You can trust me. ” </Flavor>
+<specific name="Key Abilities"> Charisma, Intelligence, Strength, Dexterity </specific>
+<specific name="Armor Proficiencies"> Light, Medium </specific>
+<specific name="Weapon Proficiencies"> Simple melee, simple ranged </specific>
+<specific name="Bonus to Defense"> +2 Will </specific>
+<specific name="Hit Points at 1st Level"> 12+ Constitution Score </specific>
+<specific name="Hit Points per Level Gained"> 5 </specific>
+<specific name="Healing Surges"> 7+ Constitution Modifier </specific>
+<specific name="Trained Skills"> Diplomacy or Bluff. From the class skills list below, choose 3 more trained skills at 1st level. </specific>
+<specific name="Class Skills"> Bluff(Cha), Diplomacy(Cha), History(Int), Insight(Wis), Intimidate(Cha), Perception(Wis), Streetwise(Cha) </specific>
+<specific name="_PARSED_CLASS_FEATURE"> Charming, Fast-Talk, Leadership </specific>
+<specific name="Role"> Leader. You inspire those around you to better themselves. </specific>
+<specific name="Power Source"> Martial. You have become an expert in tactics through endless hours of training and practice. </specific>
+<specific name="Class Features"> You have the following class features. </specific>
+<specific name="Powers"> Your powers are Charismatic Heroics that draw on your personal magnetism and appeal. Many powers reward a high Charisma and are well suited for the charming and fast-talking charismatic hero. </specific>
+<specific name="Power Name"> Heroics </specific>
+<specific name="_RoleElement"> ID_FMP_ROLE_2 </specific>
+<specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_1 </specific>
+<rules>
+<grant name="ID_INTERNAL_GRANTS_CHARISMATIC" type="Grants"/>
+<select type="Power" number="2" Category="$$CLASS,at-will,1"/>
+<textstring name="_CLASSNAME" value="ID_FMP_MODERN_CLASS_1"/>
+<statadd name="_LEVEL-ONE-HPS" value="+12"/>
+<statadd name="_PER-LEVEL-HPS" value="+5"/>
+<statadd name="Healing Surges" value="+7"/>
+<statadd name="Will Defense Class Bonus" value="+2"/>
+<select type="Skill Training" number="1" Category="ID_FMP_MODERN_CLASS_1 Choice"/>
+<select type="Skill Training" number="3" Category="ID_FMP_MODERN_CLASS_1"/>
+</rules>
+The Charismatic hero uses his charisma score to his best advantage. Taking a level in this class demonstrates a facility for connecting with others, developing proficiency at influencing there action, and improving your ability to win their support through debate, compromise, or seduction. Personal magnetism, applied interaction techniques, and touch of charm combine to define the charismatic hero.
+
+A charismatic hero might be charming or engaging; he might be strikingly handsome or possessed of great person magnetism. He might be alluring or fascinating. Whether captivating or compelling, he is definitely appealing on a number of different levels.
+
+Persuasive leaders, attractive celebrities and personalities, inspiring politicians, adept negotiators, entertainers, seducers, flirts, fast-talkers, con artists, flamboyant spies, and suave gamblers, are some of the professional choices available to the charismatic hero.
+</RulesElement>
+
+<RulesElement name="ID_FMP_MODERN_CLASS_1 Choice" type="Category" internal-id="ID_INTERNAL_CATEGORY_ID_FMP_MODERN_CLASS_1_CHOICE" source="Modern Player's Guide">
+</RulesElement>
+
+<RulesElement name="Charismatic Hero" type="Grants" internal-id="ID_INTERNAL_GRANTS_CHARISMATIC" source="Modern Player's Guide">
+<specific name="_SupportsID"> ID_FMP_MODERN_CLASS_1 </specific>
+<rules>
+<grant name="ID_FMP_ROLE_2" type="Role" />
+<grant name="ID_FMP_POWER_SOURCE_1" type="Power Source" />
+<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LIGHT)" type="Proficiency" />
+<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(MEDIUM)" type="Proficiency" />
+<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+<grant name="ID_MODERN_CLASS_FEATURE_203" type="Class Feature" />
+<select type="Class Feature" number="1" Category="ID_MODERN_CLASS_FEATURE_201|ID_MODERN_CLASS_FEATURE_202" />
+</rules>
+</RulesElement>
+
+<RulesElement name="Charming" type="Class Feature" internal-id="ID_MODERN_CLASS_FEATURE_201" source="Modern Player's Guide">
+<Category> 1 </Category>
+<specific name="Level"> 1 </specific>
+<specific name="Powers"> ID_MODERN_POWER_2001 </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="_DisplayPowers"> ID_MODERN_POWER_2001 </specific>
+<rules>
+<statadd name="Diplomacy Misc" value="+2" />
+<statadd name="Diplomacy Misc" value="+2" requires="Paragon Tier" />
+<statadd name="Diplomacy Misc" value="+2" requires="Epic Tier" />
+<grant name="ID_MODERN_POWER_2001" type="Power" />
+</rules>
+The charismatic hero has an innate talent for being charming and captivating.
+		
+Charm
+The Charismatic hero gets a +2 bonus on diplomacy checks. This bonus increases to +4 at 11th level and +6 at 21st level.
+		
+Favor
+Through the Charismatic heroes adventuring career, they have acquired many contacts they can ask favors of. The types of favors the hero can call upon can range from simple information, a loan of equipment, to transportation, etc. When asking for a favor the charismatic hero makes a diplomacy check against an easy, medium, or hard DC depending on the favor asked. Some favors may require payment or other requirement to fulfill which is left up to the DM's discretion.
+The Charismatic hero has a number of favors he can use equal to half his charisma modifier rounded down. These favors reset after an extended rest it taken.
+		
+Captivate 
+The Charismatic hero has the ability to temporarily beguile a target through the use of words and bearing. The target must share the same language at the Charismatic hero. You start with the at-will power Captivate that allows you to prevent an enemy from attacking you so long as that enemy has not been attacked by you or your allies. If the enemy is attacked the effect fails.
+</RulesElement>
+
+<RulesElement name="Fast-Talk" type="Class Feature" internal-id="ID_MODERN_CLASS_FEATURE_202" source="Modern Player's Guide">
+<Category> 1 </Category>
+<specific name="Level"> 1 </specific>
+<specific name="Powers"> ID_MODERN_POWER_2002 </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="_DisplayPowers"> ID_MODERN_POWER_2002 </specific>
+<rules>
+<statadd name="Bluff Misc" value="+2" />
+<statadd name="Bluff Misc" value="+2" requires="Paragon Tier" />
+<statadd name="Bluff Misc" value="+2" requires="Epic Tier" />
+<grant name="ID_MODERN_POWER_2002" type="Power" />
+</rules>
+The Charismatic hero has an innate talent for bending the truth and dazzling others with a combination of words, mannerisms, and charm.
+
+Con
+The Charismatic hero gets a +2 bonus on bluff checks. This bonus increases to +4 at 11th level and +6 at 21st level.
+		
+Taunt
+The Charismatic hero, through the use of insults and goading can change the target of an enemy's aggression to himself. As a minor action make a bluff check against the enemies Will defense, and if successful the enemy's next attack will be against the charismatic hero if possible. The enemy must be within line of sight and be able to hear and understand the charismatic hero. If the enemy is not able to attack the hero they must move closer to the hero incurring any attacks of opportunity from the move action.
+		
+Dazzle
+The charismatic hero has the ability to dazzle a target through sheer force of personality, a winning smile, and fast-talking. The target must share the same language as the charismatic hero. You start with the at-will power Dazzle that allows you to confuse enemies.
+</RulesElement>
+
+<RulesElement name="Leadership" type="Class Feature" internal-id="ID_MODERN_CLASS_FEATURE_203" source="Modern Player's Guide">
+<Category> 1 </Category>
+<specific name="Level"> 1 </specific>
+<specific name="_PARSED_SUB_FEATURES"> ID_MODERN_CLASS_FEATURE_204, ID_MODERN_CLASS_FEATURE_205, ID_MODERN_CLASS_FEATURE_206 </specific>
+<rules>
+<select type="Class Feature" number="1" Category="ID_MODERN_CLASS_FEATURE_203" />
+</rules>
+The Charismatic hero has a talent for leadership and inspiration. Choose one benefit from the list.
+</RulesElement>
+
+<RulesElement name="Coordinate" type="Class Feature" internal-id="ID_MODERN_CLASS_FEATURE_204" source="Modern Player's Guide">
+<Category> ID_MODERN_CLASS_FEATURE_203,1 </Category>
+<specific name="Level"> 1 </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+You and each ally in a close burst 10 who can see and hear you gain a +2 power bonus to initiative checks, as well as giving a +3 bonus on aid another checks (this replaces the +2 bonus normally given).
+</RulesElement>
+
+<RulesElement name="Tactical Organization" type="Class Feature" internal-id="ID_MODERN_CLASS_FEATURE_205" source="Modern Player's Guide">
+<Category> ID_MODERN_CLASS_FEATURE_203,1 </Category>
+<specific name="Level"> 1 </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+Each ally in a close burst 2 to you that you can see gain a +1 power bonus to attack and damage at the beginning of their round. The burst increases to 4 at level 11 and 6 at level 21. 
+Once per round as a minor action the Charismatic Hero can grant his allies a +2 power bonus to attack and damage for one enemy of his choosing in a close burst 10 until the start of the charismatic heroes next turn.
+</RulesElement>
+
+<RulesElement name="Inspiration" type="Class Feature" internal-id="ID_MODERN_CLASS_FEATURE_206" source="Modern Player's Guide">
+<Category> ID_MODERN_CLASS_FEATURE_203,1 </Category>
+<specific name="Level"> 1 </specific>
+<specific name="Powers"> ID_MODERN_POWER_2003 </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="_DisplayPowers"> ID_MODERN_POWER_2003 </specific>
+<rules>
+<grant name="ID_MODERN_POWER_2003" type="Power" />
+</rules>
+Using the inspiration power, Charismatic heroes can grant their comrades additional resilience with nothing more than a shout of encouragement.
+</RulesElement>
+	
+<RulesElement name="Captivate" type="Power" internal-id="ID_MODERN_POWER_2001" source="Modern Player's Guide">
+<Prereqs> Unselectable </Prereqs>
+<Flavor> You keep talking, stalling for time as your friends sneak past undetected. </Flavor>
+<specific name="Power Usage"> At-Will </specific>
+<specific name="Keywords"> Charm </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Close Burst 5 </specific>
+<specific name="Requirement"> You must share the same language as the target </specific>
+<specific name="Target"> A number of creatures equal to your Charisma modifier </specific>
+<specific name="Attack"> Charisma vs. Will </specific>
+<specific name="Hit"> Target is stunned until the start of your next turn. </specific>
+<specific name="Sustain Standard"> The targets remain stunned, but only for a number of round equal to your Charisma modifier. </specific>
+<specific name="Special"> The target cannot have been attacked by you or your allies. If attacked the effect ends </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Power Type"> Feature </specific>
+<specific name="_ParentFeature"> ID_MODERN_CLASS_FEATURE_201 </specific>
+</RulesElement>
+
+<RulesElement name="Dazzle" type="Power" internal-id="ID_MODERN_POWER_2002" source="Modern Player's Guide">
+<Prereqs> Unselectable </Prereqs>
+<Flavor> You keep talking, stalling for time as your friends sneak past undetected. </Flavor>
+<specific name="Power Usage"> At-Will </specific>
+<specific name="Keywords"> Charm </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Close Burst 5 </specific>
+<specific name="Requirement"> You must share the same language as the target </specific>
+<specific name="Target"> A number of creatures equal to your Charisma modifier </specific>
+<specific name="Attack"> Charisma vs. Will </specific>
+<specific name="Hit"> Target take a penalty to their Perception and Insight checks equal to your Charisma modifier until the end of your next round. </specific>
+<specific name="Special"> The target cannot have been attacked by you or your allies. If attacked the effect ends </specific>
+<specific name="Failure"> The target are on alert and gain a bonus on their Perception and Insight checks equal to your Charisma modifier until the end of the encounter or 5 minutes, whatever comes first. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Power Type"> Feature </specific>
+<specific name="_ParentFeature"> ID_MODERN_CLASS_FEATURE_202 </specific>
+</RulesElement>
+
+<RulesElement name="Inspiration" type="Power" internal-id="ID_MODERN_POWER_2003" source="Modern Player's Guide">
+<Prereqs> Unselectable </Prereqs>
+<Flavor> You call out to a hurt friend and offer some inspiring words of courage and determination that helps your friend get back on his feet. </Flavor>
+<specific name="Power Usage"> Encounter </specific>
+<specific name="Keywords"> Martial, Healing </specific>
+<specific name="Action Type"> Minor Action </specific>
+<specific name="Attack Type"> Close burst 5 (10 at 11th level, 15 at 21st level) </specific>
+<specific name="Target"> You or one ally in the burst </specific>
+<specific name="Effect"> The target can spend a healing surge and regain 1d6 additional hit points.
+Level 6: 2d6 additional hit points.
+Level 11: 3d6 additional hit points.
+Level 16: 4d6 additional hit points.
+Level 21: 5d6 additional hit points.
+Level 26: 6d6 additional hit points. 
+</specific>
+<specific name="Special"> You can use this power twice per encounter, but only once per round. At 16th level, you can use inspiration three times per encounter. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Power Type"> Feature </specific>
+<specific name="_ParentFeature"> ID_MODERN_CLASS_FEATURE_206 </specific>
+</RulesElement>
+
+<RulesElement name="Encouraging Strike" type="Power" internal-id="ID_MODERN_POWER_20101" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_MODERN_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor> With a simple shout you implore your ally to attack your target. </Flavor>
+<specific name="Power Usage"> At-Will </specific>
+<specific name="Keywords"> Martial, Weapon, Firearm </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Melee or Ranged weapon </specific>
+<specific name="Target"> One Creature </specific>
+<specific name="Effect"> One of your allies can take a free action to make a basic attack against the target.  The ally gains a bonus to the damage roll equal to your Intelligence modifier. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+<RulesElement name="Inspiring Strike" type="Power" internal-id="ID_MODERN_POWER_20102" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_MODERN_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor> You stare death in the face and inspire your allies by doing so. </Flavor>
+<specific name="Power Usage"> At-Will </specific>
+<specific name="Keywords"> Martial, Weapon, Firearm </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Melee or Ranged weapon </specific>
+<specific name="Target"> One Creature </specific>
+<specific name="Attack"> Strength vs. AC (melee) or Dexterity vs. AC (ranged) </specific>
+<specific name="Hit">1[W] + Strength modifier damage (Melee) or 1[W] + Dexterity modifier damage (Ranged).
+Level 21: 2[W] + Strength modifier damage or 2[W] + Dexterity modifier damage (Ranged). </specific>
+<specific name="Effect"> You give one ally temporary hit points equal to your Charisma modifier. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+<RulesElement name="Disheartening Strike" type="Power" internal-id="ID_MODERN_POWER_20103" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_MODERN_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor> Your attack puts the fear of combat into your foe, causing them to let their guard down. </Flavor>
+<specific name="Power Usage"> At-Will </specific>
+<specific name="Keywords"> Martial, Weapon, Firearm </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Melee or Ranged weapon </specific>
+<specific name="Target"> One Creature </specific>
+<specific name="Attack"> Strength vs. AC (melee) or Dexterity vs. AC (ranged) </specific>
+<specific name="Hit">
+1[W] + Strength modifier damage (Melee) or 1[W] + Dexterity modifier damage (Ranged)
+Level 21: 2[W] + Strength modifier damage or 2[W] + Dexterity modifier damage (Ranged).
+</specific>
+<specific name="Effect"> The next attack against the target deals extra damage equal to your Intelligence modifier. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+<RulesElement name="Viper's Strike" type="Power" internal-id="ID_MODERN_POWER_20104" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_MODERN_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor> You trick your foe into making a tactical error that gives yourcomrade a chance to strike. </Flavor>
+<specific name="Power Usage"> At-Will </specific>
+<specific name="Keywords"> Martial, Weapon, Firearm </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Melee or Ranged weapon </specific>
+<specific name="Target"> One Creature </specific>
+<specific name="Attack"> Strength vs. AC (melee) or Dexterity vs. AC (ranged) </specific>
+<specific name="Hit"> 1[W] + Strength modifier damage (Melee) or 1[W] + Dexterity modifier damage (Ranged)
+Level 21: 2[W] + Strength modifier damage or 2[W] + Dexterity modifier damage (Ranged). </specific>
+<specific name="Effect"> If the target takes a move action before the start of your next turn, it provokes an opportunity attack from an ally of your choice. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+<RulesElement name="Tactics" type="Power" internal-id="ID_MODERN_POWER_20105" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_MODERN_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor> Using your superior tactical skills you position your allies to better aid your attack. </Flavor>
+<specific name="Power Usage"> At-Will </specific>
+<specific name="Keywords"> Martial, Weapon, Firearm </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Melee or Ranged weapon </specific>
+<specific name="Target"> One Creature </specific>
+<specific name="Attack"> Strength vs. AC (melee) or Dexterity vs. AC (ranged) </specific>
+<specific name="Hit"> 1[W] + Strength modifier damage (Melee) or 1[W] + Dexterity modifier damage (Ranged)
+Level 21: 2[W] + Strength modifier damage or 2[W] + Dexterity modifier damage (Ranged). </specific>
+<specific name="Effect"> The target can make a basic attack against you as a free action. If the target makes the attack, an ally of your choice within 5 squares of you or the target can make a basic attack against the target as a free action </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+<RulesElement name="Distracting Shot" type="Power" internal-id="ID_MODERN_POWER_20106" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_MODERN_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor> You place your shot precisely to distract you foe, making him less likely to hit your ally. </Flavor>
+<specific name="Power Usage"> Encounter </specific>
+<specific name="Keywords"> Martial, Firearm </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Ranged Weapon </specific>
+<specific name="Target"> One Creature </specific>
+<specific name="Attack"> Dexterity vs. AC </specific>
+<specific name="Hit"> 2[W] + Dexterity modifier damage (Ranged). </specific>
+<specific name="Effect"> One ally within 5 squares of you gains a +2 power bonus to attack rolls against the target until the end of your next turn. </specific>
+<specific name=" Tactical Organization"> The bonuses to attack rolls get applied to a number of allies equal to your Intelligence modifier. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+<RulesElement name="Move As One" type="Power" internal-id="ID_MODERN_POWER_20107" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_MODERN_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor> You and your ally move together to attack the same enemy. </Flavor>
+<specific name="Power Usage"> Encounter </specific>
+<specific name="Keywords"> Martial, Weapon, Firearm </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Melee or Ranged Weapon </specific>
+<specific name="Target"> One Creature </specific>
+<specific name="Attack"> Strength vs. AC (melee) or Dexterity vs. AC (ranged) </specific>
+<specific name="Hit"> 1[W] + Strength modifier damage (Melee) or 1[W] + Dexterity modifier damage (Ranged). </specific>
+<specific name="Effect"> One ally within 5 squares can shift 1 square and make a basic attack against your target. </specific>
+<specific name=" Coordinate"> Ally can move a number of squares equal to your Charisma modifier. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+<RulesElement name="Light As A Feather" type="Power" internal-id="ID_MODERN_POWER_20108" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor> Like a feather in a stream your foe is driven by the current of battle. Your attacks force him to give ground. </Flavor>
+<specific name="Power Usage"> Encounter </specific>
+<specific name="Keywords"> Martial, Weapon </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Melee Weapon </specific>
+<specific name="Target"> One Creature </specific>
+<specific name="Attack"> Strength vs. AC </specific>
+<specific name="Hit"> 2[W] + Strength modifier damage. You or an ally adjacent to the target swaps places with the target. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+<RulesElement name="Coordinated Strike" type="Power" internal-id="ID_MODERN_POWER_20109" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor> Following your commands your allies let loose on your enemies. </Flavor>
+<specific name="Power Usage"> Encounter </specific>
+<specific name="Keywords"> Martial </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Close Burst 5 </specific>
+<specific name="Target"> One Creature </specific>
+<specific name="Effect"> Two allies in the burst get to make a ranged or melee basic attack against one enemy in range. The allies gain a +2 bonus to hit the target. </specific>
+<specific name=" Tactical Organization"> The bonus to hit equals 1 + your Charisma modifier. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+</D20Rules>
