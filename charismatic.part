@@ -310,7 +310,7 @@ Level 21: 2[W] + Strength modifier damage or 2[W] + Dexterity modifier damage (R
 <specific name="Power Type"> Attack </specific>
 </RulesElement>
 
-<RulesElement name="Move As One" type="Power" internal-id="ID_MODERN_POWER_20107" source="Modern Player's Guide">
+<RulesElement name="Move as One" type="Power" internal-id="ID_MODERN_POWER_20107" source="Modern Player's Guide">
 <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_MODERN_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
 <Flavor> You and your ally move together to attack the same enemy. </Flavor>
 <specific name="Power Usage"> Encounter </specific>
@@ -327,7 +327,7 @@ Level 21: 2[W] + Strength modifier damage or 2[W] + Dexterity modifier damage (R
 <specific name="Power Type"> Attack </specific>
 </RulesElement>
 
-<RulesElement name="Light As A Feather" type="Power" internal-id="ID_MODERN_POWER_20108" source="Modern Player's Guide">
+<RulesElement name="Light as a Feather" type="Power" internal-id="ID_MODERN_POWER_20108" source="Modern Player's Guide">
 <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
 <Flavor> Like a feather in a stream your foe is driven by the current of battle. Your attacks force him to give ground. </Flavor>
 <specific name="Power Usage"> Encounter </specific>
@@ -352,6 +352,84 @@ Level 21: 2[W] + Strength modifier damage or 2[W] + Dexterity modifier damage (R
 <specific name="Target"> One Creature </specific>
 <specific name="Effect"> Two allies in the burst get to make a ranged or melee basic attack against one enemy in range. The allies gain a +2 bonus to hit the target. </specific>
 <specific name=" Tactical Organization"> The bonus to hit equals 1 + your Charisma modifier. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+<RulesElement name="Defensive Action" type="Power" internal-id="ID_MODERN_POWER_20110" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor> Under your command your allies will never fall. </Flavor>
+<specific name="Power Usage"> Daily </specific>
+<specific name="Keywords"> Martial, Weapon </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Melee Weapon </specific>
+<specific name="Target"> One Creature </specific>
+<specific name="Attack"> Strength vs. AC </specific>
+<specific name="Hit"> 3[W] + Strength modifier damage. All adjacent allies gain a +1 power bonus to all defenses until the end of the encounter. </specific>
+<specific name="Effect"> All allies within 5 squares of you gain temporary hit points equal to 5 + your Charisma modifier. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+<RulesElement name="Lead by Example" type="Power" internal-id="ID_MODERN_POWER_20111" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_MISS,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_MODERN_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor> Under your direction, bullets hit their mark, and blades drive home. </Flavor>
+<specific name="Power Usage"> Daily </specific>
+<specific name="Keywords"> Martial, Weapon, Firearm </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Melee or Ranged weapon </specific>
+<specific name="Target"> One Creature </specific>
+<specific name="Attack"> Strength vs. AC (melee) or Dexterity vs. AC (ranged) </specific>
+<specific name="Hit"> 1[W] + Strength modifier damage (Melee) or 1[W] + Dexterity modifier damage (Ranged). Until the end of the encounter each ally within 5 squares of you gain a power bonus to attack rolls against the target equal to 1 + you Intelligence modifier </specific>
+<specific name="Miss"> Until the end of the encounter each ally within 5 squares of you gains a +1 power bonus to attack rolls against the target. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+<RulesElement name="Tactical Assault" type="Power" internal-id="ID_MODERN_POWER_20112" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor> Your attack proves your superior command of the situation. </Flavor>
+<specific name="Power Usage"> Daily </specific>
+<specific name="Keywords"> Martial </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Melee or Ranged weapon </specific>
+<specific name="Target"> One Creature </specific>
+<specific name="Attack"> Strength vs. AC (melee) or Dexterity vs. AC (ranged) </specific>
+<specific name="Hit"> 2[W] + Strength modifier damage (Melee) or 2[W] + Dexterity modifier damage (Ranged). One of your allies within 5 squares of you gains a power bonus to damage rolls against the target equal to 1 + your Intelligence modifier until the end of the encounter. You can transfer the bonus to another ally within 5 squares of you as a minor action. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+<RulesElement name="Hammer and Avil" type="Power" internal-id="ID_MODERN_POWER_20113" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_MISS,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_MODERN_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor> Your allies take direction from you when flanking your target, allowing them to deal more damage. </Flavor>
+<specific name="Power Usage"> Daily </specific>
+<specific name="Keywords"> Martial, Firearm </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Ranged weapon </specific>
+<specific name="Target"> One Creature </specific>
+<specific name="Attack"> Dexterity vs. AC </specific>
+<specific name="Hit"> 2[W] + Dexterity modifier damage. Until the end of the encounter whenever the target is flanked by two or more of your allies, those allies gain a +5 power bonus to damage rolls against that enemy. </specific>
+<specific name="Miss"> Until the end of the encounter whenever the target is flanked by two or more of your allies, those allies gain a +2 power bonus to damage rolls against that enemy. </specific>
+<specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
+<specific name="Level"> 1 </specific>
+<specific name="Power Type"> Attack </specific>
+</RulesElement>
+
+<RulesElement name="Take Them Down" type="Power" internal-id="ID_MODERN_POWER_20113" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_MODERN_CLASS_1,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+<Flavor />
+<specific name="Power Usage"> Daily </specific>
+<specific name="Keywords"> Martial </specific>
+<specific name="Action Type"> Standard action </specific>
+<specific name="Attack Type"> Close Burst 10 </specific>
+<specific name="Target"> One, two, or three creatures </specific>
+<specific name="Effect"> Up to three allies within range can make a Melee or Ranged basic attack against different enemies. On a successful hit the allies deal 2[W] + strength modifier damager (Melee) or 2[W] + Dexterity modifier damage (Ranged). </specific>
+<specific name="Special"> Each attacking ally can shift three squares before or after their attack. </specific>
 <specific name="Class"> ID_FMP_MODERN_CLASS_1 </specific>
 <specific name="Level"> 1 </specific>
 <specific name="Power Type"> Attack </specific>

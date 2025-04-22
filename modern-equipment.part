@@ -35,9 +35,7 @@ Handgun (A handgun is a personal firearm that can be used one-handed.). </specif
 <specific name="Damage"> 2d6 </specific>
 <specific name="Range"> 20/40 </specific>
 <specific name="Weight"> 3 </specific>
-<specific name="Gold" />
-<specific name="Price"> $650 </specific>
-<specific name="Availability"> Licensed </specific>
+<specific name="Gold"> 650 </specific>
 <specific name="_Primary End" />
 <specific name="Hands Required"> One-Handed </specific>
 <specific name="Item Slot"> Off-hand </specific>
