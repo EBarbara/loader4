@@ -13,8 +13,8 @@
 Updated 22-April-2025 File released.
 </Changelog>
     
-<RulesElement name="Beretta 92F" type="Weapon" internal-id="ID_MODERN_WEAPON_1" source="Modern Player's Guide">
-<Category> ID_INTERNAL_CATEGORY_ONE-HAND,ID_MODERN_WEAPON_GROUP_1,ID_INTERNAL_CATEGORY_ONE-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
+<RulesElement name="Beretta 92F" type="Weapon" internal-id="ID_MODERN_WEAPON_BERETTA" source="Modern Player's Guide">
+<Category> ID_INTERNAL_CATEGORY_ONE-HAND,ID_MODERN_WEAPON_GROUP_HANDGUN,ID_INTERNAL_CATEGORY_ONE-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
 <specific name="Full Text"> Beretta 92F (9 mm)
 Simple one-handed ranged firearm
 Price: $650

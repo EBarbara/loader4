@@ -45,17 +45,27 @@ Updated 22-April-2025 File released.
 <RulesElement name="Armor Proficiency (Heavy)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HEAVY)" source="Modern Player's Guide">
 </RulesElement>
 
-<RulesElement name="Handgun" type="Weapon Group" internal-id="ID_MODERN_WEAPON_GROUP_1" source="Modern Player's Guide">
+<RulesElement name="Handgun" type="Weapon Group" internal-id="ID_MODERN_WEAPON_GROUP_HANDGUN" source="Modern Player's Guide">
 <specific name="Implement"> 0 </specific>
 A handgun is a personal firearm that can be used one-handed. This includes all pistols and some submachine guns and shotguns. 
 </RulesElement>
-<RulesElement name="Longarm" type="Weapon Group" internal-id="ID_MODERN_WEAPON_GROUP_2" source="Modern Player's Guide">
+<RulesElement name="Longarm" type="Weapon Group" internal-id="ID_MODERN_WEAPON_GROUP_LONGARM" source="Modern Player's Guide">
 <specific name="Implement"> 0 </specific>
 Long-arms are personal firearms that require two hands to be fired. This group includes hunting and sniping rifles, assault rifles, shotguns, and most submachine guns. 
 </RulesElement>
-<RulesElement name="Heavy" type="Weapon Group" internal-id="ID_MODERN_WEAPON_GROUP_3" source="Modern Player's Guide">
+<RulesElement name="Heavy" type="Weapon Group" internal-id="ID_MODERN_WEAPON_GROUP_HEAVY" source="Modern Player's Guide">
 <specific name="Implement"> 0 </specific>
 Heavy weapons are the most powerful and deadly of weapons. They usually require more than one person to operate. Some heavy weapons make use of linked ammunition. The bullets are chained together with small metal clips, forming a belt. Typically, a belt holds 50 bullets; any number of belts can be clipped together. 
 </RulesElement>
+
+<RulesElement name="Weapon Proficiency (Beretta 92F)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BERETTA)" source="Modern Player's Guide">
+<Category> ID_MODERN_WEAPON_GROUP_1,ID_INTERNAL_CATEGORY_SIMPLE,ID_INTERNAL_CATEGORY_RANGED </Category>
+</RulesElement>
+
+<AppendNodes name="Simple Ranged" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" source="Modern Player's Guide" >
+<rules>
+<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BERETTA)" type="Proficiency" />
+</rules>
+</AppendNodes>
 
 </D20Rules>

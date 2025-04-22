@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<D20Rules game-system="D&amp;D4E">
+
+<UpdateInfo>
+<Version>1.0</Version>
+<Filename>modern-feats.part</Filename>
+<PartAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/modern-feats.part</PartAddress>
+<VersionAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/versions/modern-feats.txt</VersionAddress>
+</UpdateInfo>
+
+<Changelog>
+Updated 22-April-2025 File released.
+</Changelog>
+
+<RulesElement name="Weapon Proficiency (Sword-Chucks)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BERETTA)" source="Modern Player's Guide">
+<specific name="_SupportsID"> ID_FMP_FEAT_178 </specific>
+<specific name="_RequiresID"> ID_MODERN_WEAPON_BERETTA </specific>
+<specific name="Short Description"> Gain proficiency with the Beretta 92F. </specific>
+<specific name="Tier"> Heroic </specific>
+<rules>
+<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BERETTA)" type="Proficiency" />
+</rules>    
+You gain proficiency with the Beretta 92F.
+</RulesElement>
+
+</D20Rules>
