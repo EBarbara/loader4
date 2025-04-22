@@ -24,9 +24,9 @@ Updated 22-April-2025 File released.
 <modify name="Bluff" type="Skill Training" Field="UniversalClassSkill" value="true"/>
 <modify name="Diplomacy" type="Skill Training" Field="UniversalClassSkill" value="true"/>
 <modify name="Intimidate" type="Skill Training" Field="UniversalClassSkill" value="true"/>
-<statadd name="Bluff Misc" value="+2" requires="Bluff Skill Training;ID_INTERNAL_SKILL_TRAINING_BLUFF"/>
-<statadd name="Diplomacy Misc" value="+2" requires="Diplomacy Skill Training;ID_INTERNAL_SKILL_TRAINING_DIPLOMACY"/>
-<statadd name="Intimidate Misc" value="+2" requires="Intimidate Skill Training;ID_INTERNAL_SKILL_TRAINING_INTIMIDATE"/>
+<statadd name="Bluff Misc" value="+2" requires="Bluff Skill Training"/>
+<statadd name="Diplomacy Misc" value="+2" requires="Diplomacy Skill Training"/>
+<statadd name="Intimidate Misc" value="+2" requires="Intimidate Skill Training"/>
 </rules>
 Since you were young you always craved the spot light, always had to be the center of attention. As you have grown up, your desire to be seen and heard has only increased. Your life of adventure has given you plenty of opportunity to be noticed, and you revel in every minute of it.
 Are you an aspiring Hollywood star, trying to make a name for themselves? Or maybe a comedian or other stage performer? What was your reason for wanting more then your 15 minutes of fame?
