@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<D20Rules game-system="D&amp;D4E">
+
+<UpdateInfo>
+<Version>1.0</Version>
+<Filename>modern-base.part</Filename>
+<PartAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/modern-base.part</PartAddress>
+<VersionAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/versions/modern-base.txt</VersionAddress>
+</UpdateInfo>
+
+<Changelog>
+Updated 22-April-2025 File released.
+</Changelog>
+
+<RulesElement name="Firearm" type="Category" internal-id="ID_MODERN_CATEGORY_1" source="Modern Player's Guide">
+</RulesElement>
+    
+
+<AppendNodes name="Bluff" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_BLUFF" source="Modern Player's Guide">
+<Category> ID_FMP_MODERN_CLASS_1,ID_INTERNAL_CATEGORY_ID_FMP_MODERN_CLASS_1_CHOICE </Category>
+</AppendNodes>
+<AppendNodes name="Diplomacy" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_DIPLOMACY" source="Modern Player's Guide">
+<Category> ID_FMP_MODERN_CLASS_1,ID_INTERNAL_CATEGORY_ID_FMP_MODERN_CLASS_1_CHOICE </Category>
+</AppendNodes>
+<AppendNodes name="History" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_HISTORY" source="Modern Player's Guide">
+<Category> ID_FMP_MODERN_CLASS_1 </Category>
+</AppendNodes>
+<AppendNodes name="Insight" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_INSIGHT" source="Modern Player's Guide">
+<Category> ID_FMP_MODERN_CLASS_1 </Category>
+</AppendNodes>
+<AppendNodes name="Intimidate" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_INTIMIDATE" source="Modern Player's Guide">
+<Category> ID_FMP_MODERN_CLASS_1 </Category>
+</AppendNodes>
+<AppendNodes name="Perception" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_PERCEPTION" source="Modern Player's Guide">
+<Category> ID_FMP_MODERN_CLASS_1 </Category>
+</AppendNodes>
+<AppendNodes name="Streetwise" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_STREETWISE" source="Modern Player's Guide">
+<Category> ID_FMP_MODERN_CLASS_1 </Category>
+</AppendNodes>
+
+<RulesElement name="Armor Proficiency (Light)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LIGHT)" source="Modern Player's Guide">
+</RulesElement>
+<RulesElement name="Armor Proficiency (Medium)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(MEDIUM)" source="Modern Player's Guide">
+</RulesElement>
+<RulesElement name="Armor Proficiency (Heavy)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HEAVY)" source="Modern Player's Guide">
+</RulesElement>
+
+<RulesElement name="Handgun" type="Weapon Group" internal-id="ID_MODERN_WEAPON_GROUP_1" source="Modern Player's Guide">
+<specific name="Implement"> 0 </specific>
+A handgun is a personal firearm that can be used one-handed. This includes all pistols and some submachine guns and shotguns. 
+</RulesElement>
+<RulesElement name="Longarm" type="Weapon Group" internal-id="ID_MODERN_WEAPON_GROUP_2" source="Modern Player's Guide">
+<specific name="Implement"> 0 </specific>
+Long-arms are personal firearms that require two hands to be fired. This group includes hunting and sniping rifles, assault rifles, shotguns, and most submachine guns. 
+</RulesElement>
+<RulesElement name="Heavy" type="Weapon Group" internal-id="ID_MODERN_WEAPON_GROUP_3" source="Modern Player's Guide">
+<specific name="Implement"> 0 </specific>
+Heavy weapons are the most powerful and deadly of weapons. They usually require more than one person to operate. Some heavy weapons make use of linked ammunition. The bullets are chained together with small metal clips, forming a belt. Typically, a belt holds 50 bullets; any number of belts can be clipped together. 
+</RulesElement>
+
+</D20Rules>

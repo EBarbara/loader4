@@ -4,7 +4,7 @@
 <Version>1.0</Version>
 <Filename>Modern.index</Filename>
 <PartAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/Modern.index</PartAddress>
-<VersionAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/Modern.txt</VersionAddress>
+<VersionAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/versions/Modern.txt</VersionAddress>
 <Description pin="True" category="Homebrew">Modern Players Guide for Offline Character Builder.</Description>
 </UpdateInfo>
 

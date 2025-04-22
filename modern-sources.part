@@ -6,7 +6,7 @@
 <Version>1.0</Version>
 <Filename>modern-sources.part</Filename>
 <PartAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/modern-sources.part</PartAddress>
-<VersionAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/modern-sources.txt</VersionAddress>
+<VersionAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/versions/modern-sources.txt</VersionAddress>
 </UpdateInfo>
 
 <Changelog>
