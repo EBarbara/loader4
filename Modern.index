@@ -3,22 +3,13 @@
 <UpdateInfo>
 <Version>1.0</Version>
 <Filename>Modern.index</Filename>
-<PartAddress>https://cbloader.vorpald20.com/indexes/WotC.index</PartAddress>
-<VersionAddress>https://cbloader.vorpald20.com/indexes/WotC.txt</VersionAddress>
-<Description pin="True" category="Official">Unofficial Bugfixes and Missing Content to suppliment the latest official patch of the Offline Character Builder.</Description>
-<V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address>
+<PartAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/Modern.index</PartAddress>
+<VersionAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/Modern.txt</VersionAddress>
+<Description pin="True" category="Homebrew">Modern Players Guide for Offline Character Builder.</Description>
 </UpdateInfo>
 
 <Part>
-<Filename>42-modern-sources.part</Filename>
-</Part>
-<Part>
-<Filename>42-modern-base.part</Filename>
-</Part>
-<Part>
-<Filename>44-charismatic.part</Filename>
-</Part>
-<Part>
-<Filename>51-modern-equipment.part</Filename>
+<Filename>modern-sources.part</Filename>
+<PartAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/modern-sources.part</PartAddress>
 </Part>
 </PartIndex>

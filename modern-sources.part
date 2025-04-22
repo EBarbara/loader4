@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
+<D20Rules game-system="D&amp;D4E">
+	
+<UpdateInfo>
+<Version>1.0</Version>
+<Filename>modern-sources.part</Filename>
+<PartAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/modern-sources.part</PartAddress>
+<VersionAddress>https://raw.githubusercontent.com/EBarbara/loader4/refs/heads/main/modern-sources.txt</VersionAddress>
+</UpdateInfo>
+
+<Changelog>
+Updated 22-April-2025 File released.
+</Changelog>
+
+<RulesElement name="Modern Player's Guide" type="source" internal-id="ID_MODERN_SOURCE_01" source="Modern Player's Guide">
+<specific name="IsBeta">1</specific>
+</RulesElement>
+
+</D20Rules>
