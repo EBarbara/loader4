@@ -12,7 +12,8 @@
 Updated 22-April-2025 File released.
 </Changelog>
 
-<RulesElement name="Weapon Proficiency (Sword-Chucks)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BERETTA)" source="Modern Player's Guide">
+<!-- Weapon Proficiency Feats -->
+<RulesElement name="Weapon Proficiency (Beretta 92F)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BERETTA)" source="Modern Player's Guide">
 <specific name="_SupportsID"> ID_FMP_FEAT_178 </specific>
 <specific name="_RequiresID"> ID_MODERN_WEAPON_BERETTA </specific>
 <specific name="Short Description"> Gain proficiency with the Beretta 92F. </specific>
@@ -21,6 +22,64 @@ Updated 22-April-2025 File released.
 <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BERETTA)" type="Proficiency" />
 </rules>    
 You gain proficiency with the Beretta 92F.
+</RulesElement>
+
+<!-- Charismatic Hero Feats -->
+<RulesElement name="Deceptive" type="Feat" internal-id="ID_MODERN_FEAT_2105" source="Modern Player's Guide">
+<Prereqs> Charismatic Hero, Fast-Talk </Prereqs>
+<print-prereqs> Charismatic Hero, Fast-Talk </print-prereqs>
+<specific name="Tier"> Heroic </specific>
+<specific name="Short Description"> Gain bonus on bluff and disguise checks </specific>
+<specific name="Special"/>
+<specific name="type">Charismatic</specific>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+<rules>
+<statadd name="Bluff Misc" value="+2" type="Feat" />
+<statadd name="Disguise Misc" value="+2" type="Feat" />
+</rules>
+Gain a +2 feat bonus on Bluff and Disguise checks.
+</RulesElement>
+
+<RulesElement name="Double Team" type="Feat" internal-id="ID_MODERN_FEAT_2106" source="Modern Player's Guide">
+<Prereqs> Charismatic Hero </Prereqs>
+<print-prereqs> Charismatic Hero </print-prereqs>
+<specific name="Tier"> Heroic </specific>
+<specific name="Short Description"> Sacrifice bonus to attack to grant ally bonus to damage </specific>
+<specific name="Special"/>
+<specific name="type">Charismatic</specific>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+When making a melee or ranged attack, you can take a -2 penalty to the attack roll. If the attack hits, one ally of your choice within 5 squares of you gains a +3 bonus to damage rolls against the target until the end of your next turn.
+<specific name="Special"> If you have the Coordinate class feature, each ally within your coordinate area of effect can deal extra damage to the target equal to 2 + half your Charisma modifier until the end of your next turn. </specific>
+</RulesElement>
+
+<RulesElement name="Tactical Spirit" type="Feat" internal-id="ID_MODERN_FEAT_2117" source="Modern Player's Guide">
+<Prereqs> Charismatic Hero, Tactical Organization </Prereqs>
+<print-prereqs> Charismatic Hero, Tactical Organization </print-prereqs>
+<specific name="Tier"> Heroic </specific>
+<specific name="Short Description"> When you spend a minor action as part of tactical organization, one ally can shift 1 squares </specific>
+<specific name="Special"/>
+<specific name="type">Charismatic</specific>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+When the charismatic hero uses a minor action as part of the tactical organization class feature one ally of his choice can shift 1 square.
+</RulesElement>
+
+<RulesElement name="Trustworthy" type="Feat" internal-id="ID_MODERN_FEAT_2118" source="Modern Player's Guide">
+<Prereqs> Charismatic Hero, Charming </Prereqs>
+<print-prereqs> Charismatic Hero, Charming </print-prereqs>
+<specific name="Tier"> Heroic </specific>
+<specific name="Short Description"> Gain +2 bonus on diplomacy and streetwise checks </specific>
+<specific name="Special"/>
+<specific name="type">Charismatic</specific>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+<rules>
+<statadd name="Diplomacy Misc" value="+2" type="Feat" />
+<statadd name="Streetwise Misc" value="+2" type="Feat" />
+</rules>
+Gain a +2 feat bonus to Diplomacy and Streetwise checks.
 </RulesElement>
 
 </D20Rules>
