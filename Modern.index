@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PartIndex>
+<UpdateInfo>
+<Version>1.0</Version>
+<Filename>Modern.index</Filename>
+<PartAddress>https://cbloader.vorpald20.com/indexes/WotC.index</PartAddress>
+<VersionAddress>https://cbloader.vorpald20.com/indexes/WotC.txt</VersionAddress>
+<Description pin="True" category="Official">Unofficial Bugfixes and Missing Content to suppliment the latest official patch of the Offline Character Builder.</Description>
+<V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address>
+</UpdateInfo>
+
+<Part>
+<Filename>42-modern-sources.part</Filename>
+</Part>
+<Part>
+<Filename>42-modern-base.part</Filename>
+</Part>
+<Part>
+<Filename>44-charismatic.part</Filename>
+</Part>
+<Part>
+<Filename>51-modern-equipment.part</Filename>
+</Part>
+</PartIndex>
